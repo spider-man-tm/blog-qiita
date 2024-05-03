@@ -40,7 +40,7 @@ ignorePublish: false
 
 実際のコードがこちらです。
 
-```img_search.py
+```python: img_search.py
 import argparse
 import requests
 import cv2
@@ -197,7 +197,7 @@ Qiita記事: [2019年最強の画像認識モデルEfficientNet解説](https://q
 ### seedの固定
 　再現性を保つために最低限のseedを以下の関数で固定しています。
 
-```utils.py
+```python: utils.py
 # utils.py の一部を抜粋
 def seed_everything(seed):
     random.seed(seed)
@@ -335,7 +335,7 @@ def metric(true, pred):
 ### モデルの学習
 　学習コードは以下の通りです。
 
-```train.py
+```python: train.py
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
@@ -550,7 +550,3 @@ if __name__ == "__main__":
 
 　この結果をみると、草・飛行・炎・ノーマルあたりのスコアが高く、他世代と分布に大きな差が見られた毒タイプのスコアが低いことが分かります。117枚の画像をFalse Negative（本当は毒タイプだが、他のタイプで予測している）していますが、テーブルを見てもこれはダントツの数字です。
 　スコアの高いタイプに関しては、個人的にその特徴も色濃く出ているポケモンが多い気がするので（色とか）、個人的に納得感を持てる結果となりました。
-
-# 最後に
-　今回はお試しという事で厳密さや精度は度外視していましたが、こだわればもう少し面白そうかも。
-　もし面白いと思った方いましたらイイねボタン or Gitのstar押してくれると幸いです！
