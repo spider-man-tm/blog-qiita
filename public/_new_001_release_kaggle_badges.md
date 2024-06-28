@@ -30,9 +30,9 @@ README にも記載していますが、この GitHub Actions は Kaggle のユ�
 
 (生成されるバッジの例)
 
-以下はコンペティション用のバッジのリストです。同様のスタイルのバッジがデータセット、ノートブック、ディスカッションでも自動生成されます。
+以下はコンペティション用のバッジのリストです。同様のスタイルのバッジがデータセット、ノートブック、ディスカッションでも自動生成されます。添付画像だと分かりづらいですが、下段のプレートはアニメーション付きです。
 
-![badges-sample.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/88be0117-cac9-ecc7-b3ee-6c7c48c1ac4a.png)
+![badges.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/74bc5d98-9cfd-dd3f-0f6b-7222d146f9f9.png)
 
 (GitHub のプロフィールに表示される例)
 
@@ -89,7 +89,7 @@ jobs:
         run: npx puppeteer browsers install chrome@126.0.6478.63
 
       - name: Use Kaggle Badges Action
-        uses: spider-man-tm/kaggle-badges@v0.1.0
+        uses: spider-man-tm/kaggle-badges@v1.0.0
         with:
           # ex. user_name: spidermandance
           user_name: { Your Kaggle Username }
@@ -126,16 +126,18 @@ jobs:
 # Markdown
 
 ![](./kaggle-badges/CompetitionsRank/plastic-black.svg)
+![](./kaggle-plates/Competitions/white.svg)
 ```
 
 ```html
 <!-- HTML -->
 <img src="./kaggle-badges/CompetitionsRank/plastic-black.svg" />
+<img src="./kaggle-plates/Competitions/white.svg" />
 ```
 
 # 何をしているのかについて軽く
 
-この GitHub Actions は Puppeteer を使用して Kaggle のユーザーページをスクレイピングし、その情報をもとにバッジを生成しています。生成されたバッジは Shields.io を使用しているので、カスタマイズも容易です。
+この GitHub Actions は Puppeteer を使用して Kaggle のユーザーページをスクレイピングし、その情報をもとにバッジを生成しています。
 また本機能とは別のテーマですが、 一応 test(jest)に関するワークフローを用意しており、main branch への PR 発行タイミングで test が走ります。GitHub Repository Protection により、main ブランチへの直接 push を禁止しているので、この test に通らないとマージできないようにしています。
 あとは`.github/dependabot.yml`を設定しているので、依存パッケージのアップデートをメジャー・マイナー・パッチそれぞれ別の PR に分けて定期的に提案してくれるようにしています。
 
