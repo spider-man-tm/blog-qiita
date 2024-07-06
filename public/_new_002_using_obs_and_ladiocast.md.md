@@ -7,7 +7,7 @@ tags:
   - GoogleMeet
   - BackgroundMusic
 private: false
-updated_at: '2024-07-06T12:39:22+09:00'
+updated_at: "2024-07-06T12:39:22+09:00"
 id: 67613157f7985225cbde
 organization_url_name: null
 slide: false
@@ -34,6 +34,9 @@ LadioCast のインストール：[Apple Store](https://apps.apple.com/jp/app/la
 BackgroundMusic は、Mac の音声出力を管理するアプリです。特に初期設定はいじっていませんが、Output Device は `Macのスピーカー` に設定しておきます。
 
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/31663c6c-355b-3fb8-2c4d-06d560c246bb.png" width="30%">
+
+また Mac 側のサウンド設定について、Output を BackgroundMusic に設定しておきます。こうすることで、PC の音声を BackgroundMusic を通して出力することができます。
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/d3c1eac2-003c-8a39-e7a0-9958eb92cba4.png" width="50%">
 
 Windows と異なり Mac の場合 PC の音声を共有することは結構難易度が高いです、、、。しかし、BackgroundMusic を使えば、Spotfy や YouTube などの音声をまとめて扱うことができるので非常に便利です。OBS を使った配信などでも活用できると思います。
 
