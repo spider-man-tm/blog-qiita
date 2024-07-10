@@ -7,7 +7,7 @@ tags:
   - GoogleMeet
   - BackgroundMusic
 private: false
-updated_at: '2024-07-06T12:48:48+09:00'
+updated_at: "2024-07-06T12:48:48+09:00"
 id: 67613157f7985225cbde
 organization_url_name: null
 slide: false
@@ -67,6 +67,9 @@ Windows と異なり Mac の場合 PC の音声を共有することは結構難
 なお、自分は BGM として Spotify を使うことが多いですが、自分の話している最終に音楽の音量が大きいと結構気になるので、Spotify の音量を下げつつ、他で調整をしています。
 
 ![spotify-volume.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/9c3df09c-3f50-085d-2df1-211c4dff7112.png)
+
+一点補足として、Google Meet 側でノイズキャンセリング機能が ON になっている場合、人の音声以外の音を消してしまうことがあります。（これに気づかずめちゃくちゃ時間を溶かしました。。。）
+その場合は、Google Meet の設定からノイズキャンセリングを OFF にしてください。
 
 # やろうとして断念したこと
 
