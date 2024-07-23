@@ -7,7 +7,7 @@ tags:
   - Kaggle
   - GitHubActions
 private: false
-updated_at: '2024-06-28T19:37:30+09:00'
+updated_at: "2024-06-28T19:37:30+09:00"
 id: 8e287bc6a8f90018049c
 organization_url_name: null
 slide: false
@@ -67,13 +67,16 @@ GitHub では自身の GitHub アカウント名と同じリポジトリを作�
 name: Kaggle Badges
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # You can change the cron expression to suit your needs
     - cron: "11 11 1 * *" # 11:11 AM on the 1st of every month
   workflow_dispatch:
 
 jobs:
-  build:
+  create-badges:
     runs-on: ubuntu-latest
 
     steps:
@@ -89,7 +92,7 @@ jobs:
         run: npx puppeteer browsers install chrome@126.0.6478.63
 
       - name: Use Kaggle Badges Action
-        uses: spider-man-tm/kaggle-badges@v1.0.0
+        uses: spider-man-tm/kaggle-badges@v1.2.1
         with:
           # ex. user_name: spidermandance
           user_name: { Your Kaggle Username }
@@ -100,7 +103,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add ./kaggle-badges/*
+          git add ./kaggle-badges/* ./kaggle-plates/*
           git commit -m "Add generated SVG files" || echo "No changes to commit"
           git push
 ```
