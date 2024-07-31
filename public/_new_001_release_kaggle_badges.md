@@ -32,7 +32,7 @@ README にも記載していますが、この GitHub Actions は Kaggle のユ�
 
 以下はコンペティション用のバッジのリストです。同様のスタイルのバッジがデータセット、ノートブック、ディスカッションでも自動生成されます。添付画像だと分かりづらいですが、下段のプレートはアニメーション付きです。
 
-![badges.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/74bc5d98-9cfd-dd3f-0f6b-7222d146f9f9.png)
+![.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/323251/8523f4b4-6aa6-7a0c-cb23-635082589346.png)
 
 (GitHub のプロフィールに表示される例)
 
@@ -92,7 +92,7 @@ jobs:
         run: npx puppeteer browsers install chrome@126.0.6478.63
 
       - name: Use Kaggle Badges Action
-        uses: spider-man-tm/kaggle-badges@v1.2.1
+        uses: spider-man-tm/kaggle-badges@v1.2.2
         with:
           # ex. user_name: spidermandance
           user_name: { Your Kaggle Username }
