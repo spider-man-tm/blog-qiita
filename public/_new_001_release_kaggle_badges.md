@@ -1,9 +1,7 @@
 ---
 title: GitHubプロフィールにKaggleのバッジを表示するGitHub Actionsを作成しました
 tags:
-  - Node.js
   - TypeScript
-  - shields.io
   - Kaggle
   - GitHubActions
 private: false

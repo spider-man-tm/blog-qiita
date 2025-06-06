@@ -1,7 +1,6 @@
 ---
 title: Dataformの単体テストをCloud Buildで実行する
 tags:
-  - BigQuery
   - Terraform
   - CloudBuild
   - CICD
