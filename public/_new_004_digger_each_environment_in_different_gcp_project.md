@@ -1,5 +1,5 @@
 ---
-title: _new_004_digger_each_environment_in_different_gcp_project
+title: Diggerを使って各環境ごとに異なるGCPプロジェクトでTerraformを実行する
 tags:
   - Terraform
   - GitHubActions
