@@ -1,10 +1,8 @@
 ---
 title: BackgroundMusicとLadioCastを使ってMacで自分の音声とPC音源の両方をGoogle Meetにて共有する (随時更新予定)
 tags:
-  - Mac
   - BlackHole
   - LadioCast
-  - GoogleMeet
   - BackgroundMusic
 private: false
 updated_at: '2024-07-23T11:51:27+09:00'

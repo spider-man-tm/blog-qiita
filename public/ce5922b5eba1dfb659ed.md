@@ -1,7 +1,6 @@
 ---
 title: ディープラーニングは未知のポケモンのタイプを予測することができるのか？
 tags:
-  - DeepLearning
   - PyTorch
   - BingImageSearch
 private: false
