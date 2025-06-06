@@ -5,8 +5,8 @@ tags:
   - GitHubActions
   - Digger
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-06-06T12:20:58+09:00'
+id: d0206cc5c356023c0561
 organization_url_name: null
 slide: false
 ignorePublish: false
